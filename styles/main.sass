@@ -1,0 +1,37 @@
+.container
+	position: relative
+	max-width: 300px
+	margin: 0 auto
+
+.slider-chat
+	opacity: 0
+	padding: 10px
+	animation: slider 5s infinite
+
+.chats > *
+	padding: 15px
+	border-radius: 5px
+	margin-bottom: 10px
+
+.chat1, .chat3
+	margin-right: 20px
+	border: 1px solid lightgrey 
+
+.chat2, .chat4
+	margin-left: 20px
+	background: lightgrey
+
+@keyframes slider
+	0%
+		transform: translateX(300px)
+	20%
+		transform: translateX(300px)
+	30%
+		opacity: 1
+		transform: translateX(0px)
+	90%
+		opacity: 1
+		transform: translateX(0px)
+	100%
+		transform: translateX(-300px)
+	
